@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav__main {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  padding: 1rem 0;
+  z-index: 100;
+  box-shadow: 0 10px 15px rgba(92, 99, 105, 0.1);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container__content {
+  padding: 1.5em;
+}
+
+.banner__img {
+  width: 100%;
+}
+/*BANNER*/
+
+.container__banner {
+  /* margin-top: 1rem; */
+}
+
+/**/
+
+.img__logo {
+  width: 40px;
+  height: 40px;
+}
+
+/*CARD*/
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem;
+  width: 100%;
+  box-shadow: 0 0 20px 0 rgba(122, 122, 122, 0.29);
+  margin-bottom: 1.5rem;
+}
+
+.card__img {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card__title {
+  padding: 1rem;
+  font-weight: 600;
+}
+
+.card__text {
+  padding: 1rem;
+  text-align: justify;
+}
+
+/*IMAGEN*/
+
+/*FONTS*/
+.h1__title {
+  font-size: 2em;
+  padding: 2rem 0;
+  font-weight: 600;
+}
+
+/*dropdown*/
+
+.dropdown {
+  position: relative;
+  padding: inherit;
+  cursor: pointer;
+}
+
+.dropdown__header {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown__content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+  left: -10px;
+  z-index: 200;
+  min-width: 200px;
+  height: auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 1rem 0;
+}
+
+.dropdown__item {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  opacity: 0.5;
+}
+
+.dropdown__item:hover {
+  background-color: rgba(243, 244, 246, 1);
+  opacity: 1;
+}
+
+.dropdown:hover .dropdown__content {
+  display: block;
+}
+
+@media (min-width: 768px) and (min-width: 992px) {
+  .container__content {
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+  }
+
+  .h1__title {
+    font-size: 3em;
+  }
+}
