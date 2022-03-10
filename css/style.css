@@ -17,11 +17,30 @@ body {
   display: flex;
   width: 100%;
   position: fixed;
+  z-index: 100;
+
   background-color: #fff;
   padding: 1rem 0;
-  z-index: 100;
   box-shadow: 0 10px 15px rgba(92, 99, 105, 0.1);
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.container__nav {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  width: 30%;
+  margin-left: 5rem;
+}
+
+.nav__menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -35,7 +54,7 @@ body {
 /*BANNER*/
 
 .container__banner {
-  /* margin-top: 1rem; */
+  padding: 4.5rem 0 0 0;
 }
 
 /**/
@@ -86,8 +105,8 @@ body {
 
 .dropdown {
   position: relative;
-  padding: inherit;
   cursor: pointer;
+  padding: 1rem;
 }
 
 .dropdown__header {
@@ -112,7 +131,7 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
-  padding: 0.7rem 1rem;
+  padding: 1rem;
   transition: background-color 0.3s ease, color 0.3s ease;
   opacity: 0.5;
 }
@@ -124,6 +143,29 @@ body {
 
 .dropdown:hover .dropdown__content {
   display: block;
+}
+
+/*flex*/
+.d__flex {
+  display: flex;
+}
+
+.justify__content__space-around {
+  justify-content: space-around;
+}
+
+/*MARGIN*/
+.mr__1 {
+  margin-right: 0.5rem;
+}
+
+/*WIDTH*/
+.w__25 {
+  width: 25%;
+}
+
+.w__75 {
+  width: 75%;
 }
 
 @media (min-width: 768px) and (min-width: 992px) {
