@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Avanzahr</title>
   </head>
@@ -59,66 +64,106 @@
     </nav>
 
     <section class="container__banner">
-      <img src="img/img__1.jpg" class="banner__img" />
+      <img
+        src="img/img__1.jpg"
+        class="banner__img animate__animated animate__fadeIn"
+      />
     </section>
 
     <section>
       <header class="container__content">
-        <span class="h1__title">Nuestros Servicios</span>
+        <span class="h1__title" data-aos="fade-up">Nuestros Servicios</span>
       </header>
       <div class="container__content">
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-duration="500">
           <div class="card__img">
-            <img src="img/adquisicion-talento-icon-Personalizado-1.png" />
+            <img
+              src="img/adquisicion-talento-icon-Personalizado-1.png"
+              class="img__icon"
+            />
           </div>
           <div class="card__title">Adquisición de talento</div>
           <div class="card__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
             inventore reiciendis cupiditate neque eum repellat autem ducimus
-            tempore odio doloremque ad voluptas porro suscipit minus modi,
-            dolorem rerum. Officiis, laboriosam.
           </div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-duration="500">
           <div class="card__img">
-            <img src="img/capital-humano-icon-Personalizado-1.png" />
+            <img
+              src="img/capital-humano-icon-Personalizado-1.png"
+              class="img__icon"
+            />
           </div>
           <div class="card__title">Adquisición de talento</div>
           <div class="card__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
             inventore reiciendis cupiditate neque eum repellat autem ducimus
-            tempore odio doloremque ad voluptas porro suscipit minus modi,
-            dolorem rerum. Officiis, laboriosam.
           </div>
         </div>
-        <div class="card">
+
+        <div class="card" data-aos="fade-up" data-aos-duration="500">
           <div class="card__img">
-            <img src="img/consultoria-icon-Personalizado-1.png" />
+            <img
+              src="img/consultoria-icon-Personalizado-1.png"
+              class="img__icon"
+            />
           </div>
           <div class="card__title">Adquisición de talento</div>
           <div class="card__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
             inventore reiciendis cupiditate neque eum repellat autem ducimus
-            tempore odio doloremque ad voluptas porro suscipit minus modi,
-            dolorem rerum. Officiis, laboriosam.
           </div>
         </div>
-        <div class="card">
+      </div>
+      <div class="container__content">
+        <div class="card" data-aos="fade-up" data-aos-duration="500">
           <div class="card__img">
-            <img src="img/evaluacion-talento-icon-Personalizado-1.png" />
+            <img
+              src="img/adquisicion-talento-icon-Personalizado-1.png"
+              class="img__icon"
+            />
           </div>
           <div class="card__title">Adquisición de talento</div>
           <div class="card__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
             inventore reiciendis cupiditate neque eum repellat autem ducimus
-            tempore odio doloremque ad voluptas porro suscipit minus modi,
-            dolorem rerum. Officiis, laboriosam.
+          </div>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-duration="500">
+          <div class="card__img">
+            <img
+              src="img/capital-humano-icon-Personalizado-1.png"
+              class="img__icon"
+            />
+          </div>
+          <div class="card__title">Adquisición de talento</div>
+          <div class="card__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
+            inventore reiciendis cupiditate neque eum repellat autem ducimus
+          </div>
+        </div>
+
+        <div class="card" data-aos="fade-up" data-aos-duration="500">
+          <div class="card__img">
+            <img
+              src="img/consultoria-icon-Personalizado-1.png"
+              class="img__icon"
+            />
+          </div>
+          <div class="card__title">Adquisición de talento</div>
+          <div class="card__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus,
+            inventore reiciendis cupiditate neque eum repellat autem ducimus
           </div>
         </div>
       </div>
     </section>
     <footer></footer>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/app.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
